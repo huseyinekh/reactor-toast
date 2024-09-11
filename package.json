@@ -17,14 +17,17 @@
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prepare": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["toast","toastr","react-native-toast","react-native-toastr","expo-toast"],
   "author": "Huseyn Khidirov",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huseyinekh/reactor-toast.git"
+  },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
-    "axios": "^1.7.4",
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
