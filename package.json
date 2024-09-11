@@ -1,0 +1,36 @@
+{
+  "name": "reactor-toast",
+  "version": "1.0.0",
+  "description": "Elevate your React Native and Expo applications with Reactor Toast, the ultimate toast notification component designed for simplicity and elegance. Reactor Toast provides a seamless way to display customizable and visually appealing toast messages, making it easy to enhance user feedback and notifications in your mobile apps.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "Huseyn Khidirov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "axios": "^1.7.4",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "^0.74.5",
+    "typescript": "^5.5.4"
+  }
+}
