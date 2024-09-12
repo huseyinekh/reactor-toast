@@ -44,7 +44,7 @@ const YourComponent = () => {
       type: 'error',
       title: 'Error',
       description: 'My error message',
-      position: 'top',
+      position: 'top'
     });
   };
 
@@ -56,3 +56,17 @@ const YourComponent = () => {
 };
 
 export default YourComponent;
+
+
+//
+______________________________________________________________
+
+  type: 'error' | 'success' | 'warning' | 'info' | 'primary';
+  title: string;
+  description?: string;
+  position: 'top' | 'bottom';
+  autoHide?: boolean; // Optional, defaults to true
+  onClose?: () => void;
+  duration?: number;  //default 10 sec
+
+______________________________________________________________
