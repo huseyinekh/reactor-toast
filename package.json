@@ -1,6 +1,6 @@
 {
   "name": "reactor-toast",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Elevate your React Native and Expo applications with Reactor Toast, the ultimate toast notification component designed for simplicity and elegance. Reactor Toast provides a seamless way to display customizable and visually appealing toast messages, making it easy to enhance user feedback and notifications in your mobile apps.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

@@ -10,8 +10,6 @@ import {
 } from "react-native";
 import { ToastProps } from "../../interface/ToastProps";
 
-
-
 const Toast: React.FC<ToastProps> = ({
   visible,
   type,
@@ -19,6 +17,9 @@ const Toast: React.FC<ToastProps> = ({
   description,
   position,
   onClose,
+  textStyle,
+  descriptionStyle, 
+  style
 }) => {
   const [fadeAnim] = useState(new Animated.Value(0));
 
@@ -54,11 +55,12 @@ const Toast: React.FC<ToastProps> = ({
           top: position === "top" ? 20 : undefined,
         },
         getToastStyle(type),
+        style
       ]}
     >
       <TouchableOpacity onPress={onClose} style={styles.toastContent}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.description}>{description}</Text>
+        <Text style={[styles.title, textStyle]}>{title}</Text>
+        <Text style={[styles.description, descriptionStyle]}>{description}</Text>
       </TouchableOpacity>
     </Animated.View>
   );

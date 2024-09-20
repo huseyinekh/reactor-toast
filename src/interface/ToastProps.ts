@@ -1,11 +1,16 @@
+import { TextStyle, ViewStyle } from "react-native";
+
 export interface ToastProps {
-    id?: number;
-    title: string;
-    visible?: boolean;
-    description?: string;
-    onClose?: () => void;
-    autoHide?: boolean; 
-    duration?: number;
-    position: 'top' | 'bottom';
-    type: 'error' | 'success' | 'warning' | 'info' | 'primary';
-  }
+  type: "error" | "success" | "warning" | "info" | "primary";
+  position: "top" | "bottom";
+  descriptionStyle?: TextStyle;
+  textStyle?: TextStyle;
+  onClose?: () => void;
+  description?: string;
+  autoHide?: boolean;
+  duration?: number;
+  style?: ViewStyle;
+  visible?: boolean;
+  id?: number;
+  title: string;
+}
